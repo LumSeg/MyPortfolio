@@ -57,6 +57,46 @@ body.dark-mode #tech-icons .devicon {
     color: #fff;
 }
 
+/* NAV */
+
+/* Ajustes para vista móvil */
+
+@media (max-width: 767px) {
+    /* Reducir tamaño del logo en vista móvil */
+    .navbar-brand img {
+        width: 50px; /* Tamaño reducido */
+        height: 25px;
+    }
+
+    /* Hacer que el menú y el ícono de modo oscuro se vean en un color oscuro en vista móvil */
+    .navbar {
+        background-color: #f7f3f3; /* Fondo oscuro para el menú en modo móvil */
+    }
+
+    .navbar-nav .nav-link {
+        color: #0a0a0a; /* Color del texto de los enlaces del menú */
+    }
+
+    /* Ajuste de color para el ícono de modo oscuro */
+    #darkModeToggle i {
+        color: #060606; /* Color del ícono en modo oscuro */
+    }
+
+    /* Asegurar visibilidad del botón de menú y el ícono de modo oscuro */
+
+    .custom-toggler .navbar-toggler-icon {
+        background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"%3E%3Cpath stroke="%23FF5733" stroke-width="2" d="M5 7h20M5 15h20M5 23h20" /%3E%3C/svg%3E');
+    }    
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    #darkModeToggle {
+        display: block;
+    }
+}
+
 
 
 /* PRESENTACION */
