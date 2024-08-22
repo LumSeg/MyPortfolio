@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
         itemDiv.className = "col-md-4 mb-4";
 
         itemDiv.innerHTML = `
-            <div class="education-item p-4 h-100 text-center">
+            <div class="education-item p-4 h-100 text-center dark-bg">
                 <i class="${edu.iconClass} mb-3" style="font-size: 2.5rem;"></i>
                 <h4>${edu.degree}</h4>
                 <h5>${edu.institution}</h5>

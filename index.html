@@ -8,15 +8,17 @@
         <!-- Estilos CSS -->
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <link rel="stylesheet" href="./css/index.css"> <!-- Estilos personalizados -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     </head>
     <body>
         <div class="container-fluid p-0">
-            <!-- Navegación -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-                <a class="navbar-brand" href="#"><img src="./assets/Portfolio Presentation in Black White and Orange Modern Minimal Style.png" alt="" width="130px"></a>
+            <nav class="navbar navbar-expand-lg navbar-bg fixed-top dark-bg">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/Portfolio Presentation in Black White and Orange Modern Minimal Style.png" alt="" width="130px">
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -24,10 +26,10 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link h5" href="#presentacion">Inicio</a> <!-- Clases Bootstrap para tamaño de fuente -->
+                            <a class="nav-link h5" href="#presentacion">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link h5" href="#sobre-mi">Sobre mí</a> <!-- Clases Bootstrap para tamaño de fuente -->
+                            <a class="nav-link h5" href="#sobre-mi">Sobre mí</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link h5" href="#educacion">Educación</a>
@@ -38,15 +40,21 @@
                         <li class="nav-item">
                             <a class="nav-link h5" href="#contactarme">Contactarme</a>
                         </li>
+                        <!-- Ícono de modo oscuro -->
+                        <li class="nav-item">
+                            <a class="nav-link h5" href="#" id="darkModeToggle">
+                                <i class="bi bi-moon"></i> <!-- Usando íconos de Bootstrap -->
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </nav>
 
             <!-- Sección Presentación -->
-            <section class="presentacion d-flex align-items-center justify-content-center text-center" id="presentacion">
+            <section class="presentacion d-flex align-items-center justify-content-center text-center dark-bg" id="presentacion">
                 <div class="content">
                     <h1>Hola, mi nombre es Lucas.</h1>
-                    <span>DESARROLLADOR FULL-STACK</span>
+                    <span class="dark-bg">DESARROLLADOR FULL-STACK</span>
                     <div class="social-icons d-flex justify-content-center mt-3">
                         <a href="https://github.com/lumseg" target="_blank" rel="noopener noreferrer" class="mx-2"><i class="fab fa-github"></i></a>
                         <a href="https://www.linkedin.com/in/lumseg/" target="_blank" rel="noopener noreferrer" class="mx-2"><i class="fab fa-linkedin"></i></a>
@@ -60,12 +68,12 @@
             </section>            
 
             <!-- Sección Sobre mí -->
-            <section id="sobre-mi" class="sobre-mi-section container mt-5">
+            <section id="sobre-mi" class="sobre-mi-section container mt-5 dark-bg">
                 <div class="text-center mb-5">
                     <h2 class="section-title">Sobre mí</h2>
                 </div>
                 <div class="row align-items-center">
-                    <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="col-lg-6 mb-4 mb-lg-0 ">
                         <p class="lead">Soy un apasionado por la tecnología y la programación. Con mis habilidades puedo desarrollar aplicaciones web dinámicas y responsivas.</p>
                         <p>Aunque mi enfoque está en el backend, mantengo un sólido conocimiento en HTML, CSS, JavaScript, y frameworks como Bootstrap, asegurando interfaces intuitivas y atractivas.</p>
                         <p>Mi especialidad es el desarrollo backend robusto. Busco constantemente mejorar y aprender nuevas tecnologías para optimizar mis habilidades y conocimientos.</p>
@@ -77,7 +85,7 @@
             </section>
 
             <!-- Sección Educación -->
-            <section id="educacion" class="education-section container mt-5">
+            <section id="educacion" class="education-section container mt-5 dark-bg">
                 <div class="text-center mb-5">
                     <h2 class="section-title">Educación</h2>
                 </div>
@@ -85,7 +93,7 @@
             </section>
 
             <!-- Sección Mis Proyectos -->
-            <section id="mis-proyectos" class="projects-section container mt-5">
+            <section id="mis-proyectos" class="projects-section container mt-5 dark-bg">
                 <div class="text-center mb-5">
                     <h2 class="section-title">Mis Proyectos</h2>
                 </div>
@@ -93,7 +101,7 @@
             </section>
 
             <!-- Sección Contactarme -->
-            <section id="contactarme" class="contact-section container mt-5 mb-5">
+            <section id="contactarme" class="contact-section container mt-5 mb-5 dark-bg">
                 <h2>Contactarme</h2>
                 <div class="row">
                     <!-- Información de Contacto -->
@@ -119,9 +127,9 @@
                     </div>
                     <!-- Formulario de Contacto -->
                     <div class="col-md-6">
-                        <div class="contact-form">
+                        <div class="contact-form dark-bg">
                             <h3>Envíame un mensaje</h3>
-                            <form id="contact-form" action="https://formsubmit.co/lms.segovia86@gmail.com" method="POST"> <!-- Añadir ID al formulario -->
+                            <form id="contact-form" action="http://localhost:3000/send" method="POST">
                                 <div class="form-group">
                                     <label for="name">Nombre</label>
                                     <input type="text" id="name" name="name" class="form-control" required>
@@ -136,12 +144,13 @@
                                 </div>
                                 <input type="submit" class="btn btn-custom" value="Enviar">
                             </form>
+                            
                         </div>
                     </div>
                 </div>
             </section>
             <!-- Footer -->
-            <footer class="footer bg-light text-center py-4">
+            <footer class="footer text-center py-4 dark-bg">
                 <div class="container">
                     <p class="mb-0">&copy; 2024 Lucas. Todos los derechos reservados.</p>
                     <div class="social-icons mt-2">
@@ -154,6 +163,7 @@
         </div>
 
         <!-- Scripts JavaScript -->       
+        <script src="./js/darkModeToggle.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

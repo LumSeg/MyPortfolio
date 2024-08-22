@@ -1,3 +1,66 @@
+/* Modo oscuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #fff;
+}
+
+body.dark-mode .navbar {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode .section-title,
+body.dark-mode h1, 
+body.dark-mode h2, 
+body.dark-mode h3, 
+body.dark-mode h4, 
+body.dark-mode h5, 
+body.dark-mode h6,
+body.dark-mode p,
+body.dark-mode a {
+    color: #fff;
+}
+
+body.dark-mode .btn-custom {
+    background-color: #444;
+    color: #fff;
+}
+
+body.dark-mode .social-icons a {
+    color: #fff;
+}
+
+/* Asegurar que el footer se vea bien en modo oscuro */
+body.dark-mode .footer {
+    background-color: #fff;
+    color: #000;
+}
+
+body.dark-mode .footer .social-icons a {
+    color: #000;
+}
+
+/* Ejemplo de sección con fondo oscuro */
+body.dark-mode .dark-bg {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode .dark-bg h2,
+body.dark-mode .dark-bg p,
+body.dark-mode .dark-bg a {
+    color: #fff;
+}
+
+/* Para íconos de tecnologías */
+body.dark-mode #tech-icons .devicon {
+    color: #fff;
+}
+
+
+
+/* PRESENTACION */
+
 .presentacion {
     display: flex;
     flex-direction: column-reverse;

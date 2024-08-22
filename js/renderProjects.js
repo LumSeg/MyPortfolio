@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
         projectDiv.className = "col-md-4 mb-4";
 
         projectDiv.innerHTML = `
-            <div class="project-item d-flex flex-column h-100">
+            <div class="project-item d-flex flex-column h-100 dark-bg">
                 <img src="${project.image}" alt="${project.title}" class="project-image">
                 <div class="project-content p-4">
                     <h4>${project.title}</h4>

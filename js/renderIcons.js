@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
         iconDiv.className = "col-4 text-center mb-4";
 
         iconDiv.innerHTML = `
-            <i class="${tech.iconClass}" style="font-size: 2.5rem;"></i>
+            <i class="${tech.iconClass} dark-bg" style="font-size: 2.5rem;"></i>
             <p>${tech.name}</p>
         `;
 
