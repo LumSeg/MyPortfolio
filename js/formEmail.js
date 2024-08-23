@@ -8,7 +8,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
     });
 
     try {
-        const response = await fetch('http://localhost:3000/api/email/send', {
+        const response = await fetch('https://apiemail-cyd9.onrender.com/api/email/send', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
