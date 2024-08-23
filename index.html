@@ -128,7 +128,7 @@
                     <div class="col-md-6">
                         <div class="contact-form dark-bg">
                             <h3>Envíame un mensaje</h3>
-                            <form id="contact-form" action="http://localhost:3000/send" method="POST">
+                            <form id="contact-form">
                                 <div class="form-group">
                                     <label for="name">Nombre</label>
                                     <input type="text" id="name" name="name" class="form-control" required>
@@ -142,8 +142,7 @@
                                     <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
                                 </div>
                                 <input type="submit" class="btn btn-custom" value="Enviar">
-                            </form>
-                            
+                            </form>                            
                         </div>
                     </div>
                 </div>
@@ -162,7 +161,8 @@
         </div>
 
         <!-- Scripts JavaScript -->  
-         <script src="./js/menu.js"></script>     
+        <script src="./js/formEmail.js"></script>
+        <script src="./js/menu.js"></script>     
         <script src="./js/darkModeToggle.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
